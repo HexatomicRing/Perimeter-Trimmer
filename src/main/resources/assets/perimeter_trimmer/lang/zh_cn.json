@@ -13,5 +13,8 @@
   "perimeter_trimmer.fail.missing.piston": "活塞不够啦！",
   "perimeter_trimmer.fail.missing.redstonetorch": "红石火把不够啦！",
   "perimeter_trimmer.fail.missing.slime": "黏液块不够啦！",
-  "perimeter_trimmer.fail.missing.instantmine": "无法秒破活塞！请确保效率Ⅴ+急迫Ⅱ"
+  "perimeter_trimmer.fail.missing.instantmine": "无法秒破活塞！请确保效率Ⅴ+急迫Ⅱ",
+  "perimeter_trimmer.beacon.finish": "信标任务已完成！",
+  "perimeter_trimmer.beacon.remove_part": "信标任务正在移除！",
+  "perimeter_trimmer.beacon.remove": "信标任务已全部移除！"
 }

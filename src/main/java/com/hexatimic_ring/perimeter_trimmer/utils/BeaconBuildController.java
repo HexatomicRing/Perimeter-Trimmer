@@ -2,6 +2,7 @@ package com.hexatimic_ring.perimeter_trimmer.utils;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.BlockItem;
@@ -19,9 +20,13 @@ public class BeaconBuildController {
         if(fillBlock == null) return;
         PlayerEntity player = MinecraftClient.getInstance().player;
         ArrayList<BlockPos> removeList = new ArrayList<>();
+        ArrayList<BlockPos> finishList = new ArrayList<>();
         for(BlockPos p:fillPositions){
+            BlockState blockState = player.world.getBlockState(p);
             double distance = p.getSquaredDistance(player.getPos(), true);
-            if(distance <= 21){
+            if(blockState.isOf(Blocks.IRON_BLOCK)||blockState.isOf(Blocks.GOLD_BLOCK)||blockState.isOf(Blocks.EMERALD_BLOCK)||blockState.isOf(Blocks.DIAMOND_BLOCK)||blockState.isOf(Blocks.NETHERITE_BLOCK)){
+                finishList.add(p);
+            }else if(distance <= 21){
                 BlockPlacer.simpleBlockPlacement(p,fillBlock.asItem());
                 break;
             }else if(distance > 400){
@@ -29,6 +34,11 @@ public class BeaconBuildController {
             }
         }
         for(BlockPos p:removeList) fillPositions.remove(p);
+        for(BlockPos p:finishList) fillPositions.remove(p);
+        if(removeList.size() == 0 && finishList.size() > 0 && fillPositions.size() == 0) Messager.chat("perimeter_trimmer.beacon.finish");
+        if(removeList.size() > 0 && fillPositions.size() > 0) Messager.chat("perimeter_trimmer.beacon.remove_part");
+        if(removeList.size() > 0 && fillPositions.size() == 0) Messager.chat("perimeter_trimmer.beacon.remove");
+
     }
 
     public static void addTask(World world, BlockPos beaconPos, ItemStack fillBlockItem){
@@ -45,7 +55,7 @@ public class BeaconBuildController {
                     BlockState blockState = world.getBlockState(beaconPos.add(dx,dy,dz));
                     if(blockState.getMaterial().isReplaceable()){
                         posBuffer.add(beaconPos.add(dx,dy,dz));
-                    }else{
+                    }else if(!((blockState.isOf(Blocks.IRON_BLOCK)||blockState.isOf(Blocks.GOLD_BLOCK)||blockState.isOf(Blocks.EMERALD_BLOCK)||blockState.isOf(Blocks.DIAMOND_BLOCK)||blockState.isOf(Blocks.NETHERITE_BLOCK)))){
                         break layer;
                     }
                 }

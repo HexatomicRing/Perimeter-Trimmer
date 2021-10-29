@@ -13,5 +13,8 @@
   "perimeter_trimmer.fail.missing.piston": "Needs more piston!",
   "perimeter_trimmer.fail.missing.redstonetorch": "Needs more redstone torch!",
   "perimeter_trimmer.fail.missing.slime": "Needs more slime block!",
-  "perimeter_trimmer.fail.missing.instantmine": "Can't instantly mine piston! EfficiencyⅤ+HasteⅡ required!"
+  "perimeter_trimmer.fail.missing.instantmine": "Can't instantly mine piston! EfficiencyⅤ+HasteⅡ required!",
+  "perimeter_trimmer.beacon.finish": "Beacon task finished!",
+  "perimeter_trimmer.beacon.remove_part": "Beacon task is being removed!",
+  "perimeter_trimmer.beacon.remove": "Beacon task is completely removed!"
 }

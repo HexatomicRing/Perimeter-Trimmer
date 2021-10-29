@@ -14,7 +14,7 @@ public class ClientPlayerInteractionManagerMixin {
     private void init(CallbackInfo info) {
         if (BreakingFlowController.isWorking()) {
             BreakingFlowController.tick();
-            BeaconBuildController.tick();
         }
+        BeaconBuildController.tick();
     }
 }

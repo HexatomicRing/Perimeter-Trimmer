@@ -101,11 +101,11 @@ public class BreakingFlowController {
 
                 //玩家切换世界，或离目标方块太远时，删除所有缓存的任务
                 if (selectedBlock.getWorld() != MinecraftClient.getInstance().world ) {
-                    cachedTargetBlockList = new ArrayList<>();
+                    cachedTargetBlockList = new ArrayList<TargetBlock>();
                     break;
                 }
 
-                if (blockInPlayerRange(selectedBlock.getBlockPos(), player, 4.95f)) {
+                if (blockInPlayerRange(selectedBlock.getBlockPos(), player, 3.4f)) {
 
                     TargetBlock.Status status = selectedBlock.tick();
                     if (status == TargetBlock.Status.RETRACTING) {
