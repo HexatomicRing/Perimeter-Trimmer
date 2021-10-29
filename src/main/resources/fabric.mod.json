@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "perimeter_trimmer",
+  "version": "${version}",
+
+  "name": "Perimeter Trimmer",
+  "description": "When thunder starts or ends, you will send a message!",
+  "authors": [
+    "hexatomic_ring"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/perimeter_trimmer/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.hexatimic_ring.perimeter_trimmer.PerimeterTrimmer"
+    ]
+  },
+  "mixins": [
+    "perimeter_trimmer.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "perimeter_trimmer": "",
+  "perimeter_trimmer.force_stop": "由于玩家过高，空置域修剪器已强制停止。",
+  "perimeter_trimmer.toggle.check": "一秒内点击两次基岩以启动空置域修剪器！",
+  "perimeter_trimmer.toggle.on": "空置域修剪器已启动！",
+  "perimeter_trimmer.toggle.off": "空置域修剪器已关闭。",
+  "perimeter_trimmer.toggle.toggle": "开始清理方块。",
+  "perimeter_trimmer.warn.full": "待破坏的方块已超过10个，右键一个方块以清空此列表。",
+  "perimeter_trimmer.warn.multiplayer": "§7看起来你好像是在服务器使用空置域修剪器？§r\n§7在使用本mod前请先征询其他玩家的意见。§r",
+  "perimeter_trimmer.fail.place.piston": "无法放置活塞！",
+  "perimeter_trimmer.fail.place.redstonetorch": "无法放置红石火把！",
+  "perimeter_trimmer.fail.missing.survival": "仅限生存模式！",
+  "perimeter_trimmer.fail.missing.piston": "活塞不够啦！",
+  "perimeter_trimmer.fail.missing.redstonetorch": "红石火把不够啦！",
+  "perimeter_trimmer.fail.missing.slime": "黏液块不够啦！",
+  "perimeter_trimmer.fail.missing.instantmine": "无法秒破活塞！请确保效率Ⅴ+急迫Ⅱ"
+}

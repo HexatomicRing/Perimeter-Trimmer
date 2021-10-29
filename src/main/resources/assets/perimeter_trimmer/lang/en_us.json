@@ -1,0 +1,17 @@
+{
+  "perimeter_trimmer": "",
+  "perimeter_trimmer.force_stop": "Perimeter Trimmer is force stopped because the player is too high.",
+  "perimeter_trimmer.toggle.check": "Click twice in one second to start Perimeter Trimmer!",
+  "perimeter_trimmer.toggle.on": "Perimeter Trimmer started! ",
+  "perimeter_trimmer.toggle.off": "Perimeter Trimmer stopped.",
+  "perimeter_trimmer.toggle.toggle": "Start to clear blocks.",
+  "perimeter_trimmer.warn.full": "The block to be broken is over 10. You should right click a block to clear the list.",
+  "perimeter_trimmer.warn.multiplayer": "§7It seems that you are playing on a server? §r\n§7Please ask other players' opinions first.§r",
+  "perimeter_trimmer.fail.place.piston": "Failed to place piston!",
+  "perimeter_trimmer.fail.place.redstonetorch": "Failed to place redstone torch!",
+  "perimeter_trimmer.fail.missing.survival": "Survival Only!",
+  "perimeter_trimmer.fail.missing.piston": "Needs more piston!",
+  "perimeter_trimmer.fail.missing.redstonetorch": "Needs more redstone torch!",
+  "perimeter_trimmer.fail.missing.slime": "Needs more slime block!",
+  "perimeter_trimmer.fail.missing.instantmine": "Can't instantly mine piston! EfficiencyⅤ+HasteⅡ required!"
+}
