@@ -10,7 +10,7 @@ You need to reserve enough space for a larger beacon.
 
 After right-clicked a bedrock with nothing in your hand then right-click twice in one second to enter this mode. This mod will help you to automatically break bedrocks, fill fluids and mine stones.
 
-Please assert that you have pistons, redstone torches and slime blocks in your hot bar(NOT JUST IN YOUR INVENTORY!!!), and have the effect of haste II.
+Please assert that you have pistons, redstone torches and slime blocks in your hot bar(NOT JUST IN YOUR INVENTORY!!!), and have diamond pickaxe with efficiency V, and have the effect of haste II.
 
 The bedrock at y=0 will not be broken, and you cannot use this function at y>64. Any block with blocks above will not be broken in order to protect the border of the perimeter.
 
